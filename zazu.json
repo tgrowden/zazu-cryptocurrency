@@ -1,0 +1,32 @@
+{
+	"name": "zazu-cryptocurrency",
+	"version": "0.0.1",
+	"description": "Get Cryptocurrencty prices.",
+	"blocks": {
+		"input": [
+			{
+				"id": "prefix",
+				"type": "PrefixScript",
+				"prefix": "crypto",
+				"space": true,
+				"args": "Required",
+				"script": "src/index.js",
+				"connections": [
+					"Copy"
+				]
+			}
+		],
+		"output": [
+			{
+				"id": "Open",
+				"type": "OpenInBrowser",
+				"url": "{value}"
+			},
+			{
+                "id": "Copy",
+                "type": "CopyToClipboard",
+                "text": "{value}"
+            }
+		]
+	}
+}

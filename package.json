@@ -1,0 +1,30 @@
+{
+  "name": "zazu-cryptocurrency",
+  "version": "0.0.1",
+  "description": "A Zazu plugin to get current cryptocurrency prices.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgrowden/zazu-cryptocurrency.git"
+  },
+  "keywords": [
+    "Zazu"
+  ],
+  "author": "Taylor Growden <taylor.growden@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tgrowden/zazu-cryptocurrency/issues"
+  },
+  "homepage": "https://github.com/tgrowden/zazu-cryptocurrency#readme",
+  "devDependencies": {
+    "eslint": "^4.14.0"
+  },
+  "dependencies": {
+    "cryptocompare": "^0.4.0",
+    "currency-symbol-map": "^4.0.3",
+    "node-fetch": "^1.7.3"
+  }
+}
