@@ -4,6 +4,7 @@
   "description": "A Zazu plugin to get current cryptocurrency prices.",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "lint": "eslint ."
   },
   "repository": {
@@ -20,7 +21,9 @@
   },
   "homepage": "https://github.com/tgrowden/zazu-cryptocurrency#readme",
   "devDependencies": {
-    "eslint": "^4.14.0"
+    "eslint": "^4.14.0",
+    "eslint-plugin-jest": "^21.6.1",
+    "jest": "^22.0.6"
   },
   "dependencies": {
     "cryptocompare": "^0.4.0",
