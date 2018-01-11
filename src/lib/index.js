@@ -1,1 +1,3 @@
-exports.formatResults = require('./format-results')
+exports.getPrice = require('./get-price')
+
+exports.getCoinList = require('./get-coin-list')

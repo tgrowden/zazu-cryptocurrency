@@ -12,7 +12,7 @@
 				"args": "Required",
 				"script": "src/index.js",
 				"connections": [
-					"Copy"
+					"Open"
 				]
 			}
 		],

@@ -1,11 +1,22 @@
 global.fetch = require('node-fetch')
-const { formatResults } = require('./lib')
+const { getPrice, getCoinList } = require('./lib')
 
 module.exports = (pluginContext) => {
-    return (query, env) => {
-        const currencies = env.Currencies || [ 'USD' ]
-        query = query.toUpperCase()
+	return (query, env) => {
+		const currencies = env.Currencies || [ 'USD' ]
+		query = query.toUpperCase()
+		let res
 
-        return formatResults(query, currencies, pluginContext)
-    }
+		switch (query) {
+			case 'COINS':
+			case 'LIST':
+				res = getCoinList(pluginContext)
+				break
+		
+			default:
+				res = getPrice(query, currencies, pluginContext)
+		}
+
+		return res
+	}
 }
